@@ -7,6 +7,35 @@ public class Employee {
     private String country;
     private String email;
 
+    private int age;
+
+    public Employee(int id, String name, String country, String email, int age) {
+        this.id = id;
+        this.name = name;
+        this.country = country;
+        this.email = email;
+        this.age = age;
+    }
+
+//    public Employee(int id, String name, String country, String email) {
+//        this.id = id;
+//        this.name = name;
+//        this.country = country;
+//        this.email = email;
+//            }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Employee() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -46,6 +75,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 ", email='" + email + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
