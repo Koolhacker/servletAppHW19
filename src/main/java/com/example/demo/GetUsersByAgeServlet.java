@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
-@WebServlet("/getUsersByAge")
+@WebServlet("/getUsersByAgeServlet")
 public class GetUsersByAgeServlet extends HttpServlet {
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
